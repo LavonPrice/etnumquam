@@ -1,0 +1,49 @@
+{
+  "name": "etnumquam",
+  "version": "1.0.0",
+  "description": "Promisified File System",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.d.ts.map",
+    "dist/index.js",
+    "dist/index.js.map",
+    "src/index.ts"
+  ],
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "exclude": [
+      "dist/test.js"
+    ],
+    "check-coverage": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LavonPrice/etnumquam.git"
+  },
+  "author": "AvaYost",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LavonPrice/etnumquam.git/issues"
+  },
+  "homepage": "https://github.com/LavonPrice/etnumquam.git",
+  "devDependencies": {
+    "@types/chai": "^4.2.13",
+    "@types/mocha": "^5.2.6",
+    "mocha": "^6.0.2",
+    "nyc": "^15.0.0",
+    "typescript": "^3.4.1"
+  },
+  "dependencies": {
+    "@ts-common/async-iterator": "^1.1.0",
+    "@types/node": "^10.12.18",
+    "tslib": "^1.9.3"
+  }
+}
